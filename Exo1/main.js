@@ -13,11 +13,15 @@ function checkPrimeNumber() {
       
     if (nbr%i === 0) {
       document.getElementById("check").innerHTML="nonPrime"
-    	return
+    	return false
      
     }
     i++
 	}
   document.getElementById("check").innerHTML="prime"
-
+  true
 }
+
+console.log("kk")
+
+return true
