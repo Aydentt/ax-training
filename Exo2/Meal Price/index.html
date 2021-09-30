@@ -1,8 +1,13 @@
 <html>
 
-    <body background-color: turquoise>
-        <title>Meal Price</title>
+    <header>
+        <title style>Meal Price</title>
         <h1>Meal Price</h1>
+    </header>
+
+        <body>
+        <head>
+        <link rel="stylesheet" href="MealPrice.css">
         <script src="prixRepas.js">
             
         </script>
@@ -10,20 +15,25 @@
         <meta name="vieawport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-AU-Compatible" content="ie=edge">
         
+        <div class="positioning" class="center" class="flexbox">
+        
+        
         <text>Bill = </text><input id="bill" name="Bill" type=number>
         <br>
 
-        <text>Tips = </text><input id="tips" name="Tips" type=number >
+        <text>Tips by % = </text><input id="tips" name="Tips" type=number >
         <br>
 
         <text>People = </text><input id="people" name="People" type=number>
         <br>
         
-        <button onclick="prixRepas()">Submit</button>
+        <button onclick="prixRepas()">Calculate</button>
         <br>
 
         <text id=prixRepas></text>
-
-
+        
+        </div>
+        </head>
+        
     </body>
 </html>
