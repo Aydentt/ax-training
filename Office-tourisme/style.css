@@ -1,0 +1,16 @@
+body {
+    background-color: green;
+    font-size: 60px;
+    text-align: center;
+    color: green;
+}
+
+h1, h2, h3, h4, h5{
+    font-size: 90px;
+    text-decoration-line: underline;
+
+}
+
+button {
+   font-style: italic; 
+}
