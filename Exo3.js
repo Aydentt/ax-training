@@ -1,0 +1,7 @@
+function calculate_age(dob) { //function c'est pour calculer ou définir une valeur, calculate_age c'est le nom de la fonction et (dob) ça veut dire Date Of Birth { c'est le début de la fonction //
+    var date = Date.now() - dob.getTime();//var ça permet de déclarer une variable, date c'est le nom de la variable, = attribue une valeur, Date.now renvoie le nombre de millisecondes écoulé depuis le 1/1/1970 et () appel de la fontion si vide  //
+    var age = new Date(date); // var déclare une variable, age nom de la variable, = attribue une valeur, new crée un nouvel objet de zéro et lie cet objet à un autre objet en le définissant comme prototype/origine (ici on crée une nouvelle date) puis (date) appel de la variable date//
+
+    return Math.abs(age.getUTCFullYear() - 1970); // return mets fin à l'éxécution de la fonction, Math.abs retourne la valeur absolue d'un nombre (j'ai cherché j'ai du mal à comprendre ce qu'est "absolue" ça veut dire que ça change pas en aucun cas ?) () appel de la variable age, age nom de la variable, .getUTCFullYear() prend la date à la date de fin d'année c'est à dire le 31/12/yyyy et - 1970 car premier chiffre jusqu'où les valeurs peuvent remonter dans les dates//
+}
+console.log(calculate_age(new Date(1995, 7,12))); // console.log permet d'afficher, vérifier le résultat actuel du code,  (calculate_age 'nom de  la fonction' (new Date  'objet de la variable'(1995, 7, 12 'date pour le calcul qui peut être changée'))) //
